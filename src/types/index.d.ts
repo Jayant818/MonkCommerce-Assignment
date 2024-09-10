@@ -39,7 +39,7 @@ export interface ProductItemsProps {
 		variantIndex: number | null
 	) => void;
 	onDiscountTypeChange: (
-		newValue: string,
+		newValue: "% off" | "flat off",
 		productId: number,
 		variantIndex: number | null
 	) => void;
@@ -63,7 +63,7 @@ export interface ProductItemProps {
 		variantIndex: number | null
 	) => void;
 	onDiscountTypeChange: (
-		newValue: string,
+		newValue: "% off" | "flat off",
 		productId: number,
 		variantIndex: number | null
 	) => void;
@@ -91,7 +91,7 @@ export interface VarientItemsProps {
 	onRemove: (variantId: number) => void;
 	handleDiscountChange: (newValue: number, variantIndex: number | null) => void;
 	handleDiscountTypeChange: (
-		newValue: string,
+		newValue: "% off" | "flat off",
 		variantIndex: number | null
 	) => void;
 }
@@ -100,7 +100,7 @@ export interface VarientItemProps {
 	variant: Variant;
 	onRemove: () => void;
 	ind: number;
-	handleDiscountTypeChange: (discountType: string) => void;
+	handleDiscountTypeChange: (discountType: "% off" | "flat off") => void;
 	handleDiscountChange: (discountValue: number) => void;
 }
 

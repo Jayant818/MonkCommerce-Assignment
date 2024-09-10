@@ -43,7 +43,7 @@ const ProductItem = SortableElement<ProductItemProps>(
 		};
 
 		const handleDiscountTypeChange = (
-			newValue: string,
+			newValue: "% off" | "flat off",
 			variantId: number | null = null
 		) => {
 			onDiscountTypeChange(newValue, product.id, variantId);
